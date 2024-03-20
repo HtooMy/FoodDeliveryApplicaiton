@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .nav-link{
+    @apply relative cursor-pointer text-[17px] w-fit lg:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#49557e] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
