@@ -6,8 +6,8 @@ const PlaceOrder = () => {
   const { getTotalCartAmount } = useContext(StoreContext);
 
   return (
-    <div className="flex flex-col lg:flex-row lg:space-x-8 justify-between items-start my-14 mx-[10%]">
-      <div className="w-full lg:w-1/2">
+    <div className="flex flex-col xl:flex-row xl:space-x-8 justify-between items-start my-14 mx-[10%]">
+      <div className="w-full xl:w-1/2">
         <h1 className="text-2xl font-bold mb-6">Delivery Information</h1>
         <form className="space-y-4">
           <div className="flex flex-col space-y-2">
@@ -66,7 +66,7 @@ const PlaceOrder = () => {
         </form>
       </div>
 
-      <div className="w-full lg:w-1/2 my-14">
+      <div className="w-full xl:w-1/2 my-14">
         <div className="bg-gray-100 rounded-md p-6">
           <h2 className="text-2xl font-bold mb-4">Cart Totals</h2>
           <div className="flex justify-between items-center mb-4">
