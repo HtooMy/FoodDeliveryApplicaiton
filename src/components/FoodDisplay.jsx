@@ -37,7 +37,7 @@ const FoodDisplay = ({category}) => {
   return (
     <div className="mx-[5%] mt-[4vh]">
       <div>
-        <h1 className="font-bold md:text-[1.8rem] text-[1rem] md:mb-[2rem] mb-[1rem]">
+        <h1 className="font-bold text-[1.8rem] md:mb-[2rem] mb-[1rem]">
           Top Dishes near you
         </h1>
         <div className=" grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[2rem]">

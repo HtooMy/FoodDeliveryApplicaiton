@@ -5,15 +5,15 @@ const Menu = ({ category, setCategory }) => {
   return (
     <div id="menu" data-aos="fade-right" className="mx-[5%] mt-[5vh]">
       <div className="">
-        <h1 className="font-semibold md:text-[2rem] text-[1rem]">
+        <h1 className="font-semibold text-[2rem]">
           Explore our menu
         </h1>
-        <p className="md:w-[60%] w-[80%] md:pt-[1rem] pt-[0.5rem] md:text-[1rem] text-[0.6rem]">
+        <p className="md:w-[60%] w-[99%] md:pt-[1rem] pt-[0.5rem] text-[1rem]">
           Choose from a diverse menu featuring a delectable array of dishes. Our
           mission is to satisfy your cravings and elevate your dinning
           experience, one delicious meal at a time.
         </p>
-        <div className="md:pt-[2rem] pt-[1rem] flex space-x-[2rem] text-center overflow-x-scroll mx-[1%]">
+        <div className="pt-[2rem] flex space-x-[2rem] text-center overflow-x-scroll mx-[1%]">
           {menu_list.map((item, index) => {
             return (
               <div
@@ -32,7 +32,7 @@ const Menu = ({ category, setCategory }) => {
                   src={item.menu_image}
                   alt="menu image"
                 />
-                <p className="my-[1rem] text-[#747474] md:text-[1rem] text-[0.6rem]">
+                <p className="my-[1rem] text-[#747474] text-[1rem]">
                   {item.menu_name}
                 </p>
               </div>
