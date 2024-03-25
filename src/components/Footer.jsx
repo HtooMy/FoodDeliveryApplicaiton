@@ -6,7 +6,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div className="mt-[4vh] bg-[#323232]">
+    <div id="footer" className="mt-[4vh] bg-[#323232]">
       <div className="px-[5%] py-[3rem]">
         <div className="sm:flex sm:flex-row sm:justify-between flex flex-col space-y-10 w-[90%]">
           <div className="flex-[0.6]">

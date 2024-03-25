@@ -3,7 +3,7 @@ import { menu_list } from "../assets/assets";
 
 const Menu = ({ category, setCategory }) => {
   return (
-    <div data-aos="fade-right" className="mx-[5%] mt-[5vh]">
+    <div id="menu" data-aos="fade-right" className="mx-[5%] mt-[5vh]">
       <div className="">
         <h1 className="font-semibold md:text-[2rem] text-[1rem]">
           Explore our menu
