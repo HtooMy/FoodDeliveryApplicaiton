@@ -1,6 +1,11 @@
 import React, { useContext } from "react";
 import { StoreContext } from "../context/StoreContext";
-import { FaRegEnvelope, FaUser, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import {
+  FaRegEnvelope,
+  FaUser,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
 const PlaceOrder = () => {
   const { getTotalCartAmount } = useContext(StoreContext);
@@ -9,7 +14,7 @@ const PlaceOrder = () => {
     <div className="flex flex-col xl:flex-row xl:space-x-8 justify-between items-start my-14 mx-[10%]">
       <div className="w-full xl:w-1/2">
         <h1 className="text-2xl font-bold mb-6">Delivery Information</h1>
-        <form className="space-y-4">
+        <form className="space-y-4 hidden xl:block">
           <div className="flex flex-col space-y-2">
             <div className="flex space-x-4">
               <input
@@ -64,6 +69,60 @@ const PlaceOrder = () => {
             />
           </div>
         </form>
+
+        <form className="space-y-4 xl:hidden">
+          <div className="flex flex-col space-y-2">
+            <input
+              className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none"
+              type="text"
+              placeholder="First name"
+            />
+            <input
+              className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none"
+              type="text"
+              placeholder="Last name"
+            />
+
+            <input
+              className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none"
+              type="email"
+              placeholder="Email Address"
+            />
+            <input
+              className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none"
+              type="text"
+              placeholder="Street"
+            />
+
+            <input
+              className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none"
+              type="text"
+              placeholder="City"
+            />
+            <input
+              className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none"
+              type="text"
+              placeholder="State"
+            />
+
+            <input
+              className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none"
+              type="text"
+              placeholder="Zip Code"
+            />
+            <input
+              className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none"
+              type="text"
+              placeholder="Country"
+            />
+
+            <input
+              className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none"
+              type="text"
+              placeholder="Phone"
+            />
+          </div>
+        </form>
       </div>
 
       <div className="w-full xl:w-1/2 my-14">
@@ -81,7 +140,9 @@ const PlaceOrder = () => {
           <hr className="border-t border-gray-300 mb-4" />
           <div className="flex justify-between items-center">
             <p className="font-bold">Total</p>
-            <p className="font-bold">${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}</p>
+            <p className="font-bold">
+              ${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}
+            </p>
           </div>
           <button className="mt-6 py-2 bg-orange-500 text-white rounded-lg px-6 hover:bg-orange-600 transition duration-200 focus:outline-none">
             PROCEED TO PAYMENT
